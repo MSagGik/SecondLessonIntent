@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:text="Дополнительная активность"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#2196E4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dataMainActivity"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:hint="Данные из главной активности"
+        android:textColor="#2196E4"
+        android:textColorHint="#87B8D8"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:background="#EEF3F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#2196E4"
+        android:text="Главная активность"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataMainActivity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
